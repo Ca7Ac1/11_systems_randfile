@@ -31,7 +31,7 @@ int main()
     int i;
     for (i = 0; i < 10; i++)
     {
-        arr[i] = gen_random;
+        arr[i] = gen_random();
 
         printf("%u ", arr[i]);
     }
@@ -74,6 +74,11 @@ int main()
     write(file, arr2[9], sizeof(int));
 
     printf("\narray: \n");
+
+    for (i = 0; i < 10; i++)
+    {
+        printf("%u ", arr2[i]);
+    }
 
     return 0;
 }
