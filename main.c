@@ -62,16 +62,16 @@ int main()
         return -1;
     }
 
-    write(file, arr2[0], sizeof(int));
-    write(file, arr2[1], sizeof(int));
-    write(file, arr2[2], sizeof(int));
-    write(file, arr2[3], sizeof(int));
-    write(file, arr2[4], sizeof(int));
-    write(file, arr2[5], sizeof(int));
-    write(file, arr2[6], sizeof(int));
-    write(file, arr2[7], sizeof(int));
-    write(file, arr2[8], sizeof(int));
-    write(file, arr2[9], sizeof(int));
+    read(file, arr2[0], sizeof(int));
+    read(file, arr2[1], sizeof(int));
+    read(file, arr2[2], sizeof(int));
+    read(file, arr2[3], sizeof(int));
+    read(file, arr2[4], sizeof(int));
+    read(file, arr2[5], sizeof(int));
+    read(file, arr2[6], sizeof(int));
+    read(file, arr2[7], sizeof(int));
+    read(file, arr2[8], sizeof(int));
+    read(file, arr2[9], sizeof(int));
 
     printf("\narray: \n");
 
@@ -79,6 +79,8 @@ int main()
     {
         printf("%u ", arr2[i]);
     }
+
+    printf("\n");
 
     return 0;
 }
