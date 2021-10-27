@@ -43,16 +43,16 @@ int main()
         return -1;
     }
 
-    write(file, arr[0], sizeof(int));
-    write(file, arr[1], sizeof(int));
-    write(file, arr[2], sizeof(int));
-    write(file, arr[3], sizeof(int));
-    write(file, arr[4], sizeof(int));
-    write(file, arr[5], sizeof(int));
-    write(file, arr[6], sizeof(int));
-    write(file, arr[7], sizeof(int));
-    write(file, arr[8], sizeof(int));
-    write(file, arr[9], sizeof(int));
+    write(file, &arr[0], sizeof(int));
+    write(file, &arr[1], sizeof(int));
+    write(file, &arr[2], sizeof(int));
+    write(file, &arr[3], sizeof(int));
+    write(file, &arr[4], sizeof(int));
+    write(file, &arr[5], sizeof(int));
+    write(file, &arr[6], sizeof(int));
+    write(file, &arr[7], sizeof(int));
+    write(file, &arr[8], sizeof(int));
+    write(file, &arr[9], sizeof(int));
 
     int arr2[10];
     file = open("temp.txt", O_RDONLY);
